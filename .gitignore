@@ -1,0 +1,68 @@
+# Node / build
+node_modules/
+dist/
+build/
+.vite/
+.env.local
+.env.*.local
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Firebase/credentials
+.firebase/
+firebase-debug.log
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+``` ````
+
+PowerShell commands (create and verify)
+````powershell
+cd "C:\Users\Kiran\OneDrive\Desktop\Hackathon"
+# create file and write content (overwrites if exists)
+@"
+node_modules/
+dist/
+build/
+.vite/
+[.env.local](http://_vscodecontentref_/0)
+.env.*.local
+.vscode/
+.DS_Store
+Thumbs.db
+.firebase/
+firebase-debug.log
+npm-debug.log*
+"@ | Out-File -FilePath ".\.gitignore" -Encoding utf8
+
+# view file
+Get-Content ".\.gitignore"
+``` ````
+
+CMD commands (alternate)
+````cmd
+cd "C:\Users\Kiran\OneDrive\Desktop\Hackathon"
+echo node_modules/ > .gitignore
+echo dist/ >> .gitignore
+echo build/ >> .gitignore
+echo .vite/ >> .gitignore
+echo .env.local >> .gitignore
+type .gitignore
+``` ````
+
+Quick checks
+- Open project in VS Code: code "C:\Users\Kiran\OneDrive\Desktop\Hackathon"
+- Ensure .env.local is listed and .gitignore contains the .env.local entry
+- Commit changes: git add .gitignore && git commit -m "Add gitignore"
+
+Tell me if you want me to create the file in your workspace now and I will produce the exact file content again.Quick checks
+- Open project in VS Code: code "C:\Users\Kiran\OneDrive\Desktop\Hackathon"
+- Ensure .env.local is listed and .gitignore contains the .env.local entry
+- Commit changes: git add .gitignore && git commit -m "Add gitignore"
+
+Tell me if you want me to create the file in your workspace now and I will produce the exact file content again.
